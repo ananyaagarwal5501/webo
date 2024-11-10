@@ -1,0 +1,129 @@
+@font-face{
+    src: url(fonts/Roboto-Light.ttf);
+    font-family: Roboto-Light;
+}
+
+@font-face{
+    src: url(fonts/NotoSans-VariableFont_wdth\,wght.ttf);
+    font-family: NotoSans;
+}
+
+body{
+    
+    background-color: blueviolet;
+    border:3px solid;
+    display: flow-root;
+}
+.box{
+    border: 5px solid;
+    font-size: 2em;
+    width:150px;
+    height:150px;
+    margin: auto;
+}
+
+#box2{
+    background-color: rgba(0, 255, 162, 0.932);
+    
+}
+
+#box3{
+    background-color: rgba(123, 0, 255, 0.932);
+}
+
+h1{
+    text-shadow: 3px 3px 3px red, -3px -3px 3px rgb(6, 2, 108);
+    font-family: Roboto-Light, verdana, arial;
+
+    color: white;
+}
+#box1
+{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    box-shadow: 3px 3px 5px;
+}
+
+h4{
+    
+
+    border: 3px solid hsl(62, 94%, 48%);
+    border-radius: 20px;
+}
+
+h6{
+    text-shadow: 3px 3px 3px red, -3px -3px 3px rgb(6, 2, 108);
+}
+
+#p1{
+    font-family: NotoSans, "lucida console", "courier new";
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    font-style: italic;
+}
+#p2{
+    border-bottom: 3px solid rgb(131, 4, 4);
+    border-top: 3px dashed rgb(115, 240, 245);
+    border-left: 4px dotted black;
+    border-right: 5px ridge rgb(3, 167, 36);
+    color: black;
+
+    border-radius: 10px;
+}
+#p3{
+    color:hsl(62, 94%, 48%);
+}
+#p4{
+    color: brown;
+}
+
+#img2
+{
+    float: left;
+    margin-right: 10px;
+}
+#img3{
+    float: right;
+    margin-left:10px;
+}
+
+.paragraph{
+    border: 2px solid;
+    height: 75px;
+    overflow: auto;
+}
+
+#div{
+    background-color: rgb(248, 95, 146);
+}
+#span{
+background-color: rgb(104, 104, 194);
+}
+/*boxes wala*/
+.dibba{
+    background-color: rgb(163, 242, 175);
+}
+
+.boxo
+{
+    border: 2px solid red;
+    height:auto;
+    float: left;
+    width: 50%;
+    padding:25px;
+    box-sizing:border-box;
+    text-align: center;
+}
+
+/*positions*/
+#box4
+{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(204, 145, 67);
+    position: relative;  /*ex. of relative*/
+    top: 100px;
+    left: 100px;
+}

@@ -1,0 +1,487 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+
+    <title>My first website </title>
+    <!--------------------------------------meta data-->
+    <meta charset="UTF-8">
+    <meta name="description" content="free html tutorial for beginners">
+    <meta name="keywords" content="HTML, tutorial. beginners">
+    <meta name="author" content="Ananya">
+    <!--meta which makes the website to adjust acc to the screen size of device-->
+    <meta name="viewport" content="width-device, initial-scale=1.0">
+    <!--meta tells to refresh the webpage after 30 seconds-->
+    <!--meta http-equiv="refresh" content="30"-->
+
+<!--linking the html file with the google font roboto BUT now no need as ttf files downloaded locally-->
+<!--link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"-->
+
+<!--linking the html file with the google font nato sans-->
+<!--link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"-->
+
+
+
+    <!--picture laga diiii-->
+    <link rel="icon" type="image/png" href="imagesall/faviconn.png">
+     
+    <!--linking stylesheet-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+
+
+
+<body>
+
+    <!--------------------------------------------header-->
+    <header style="background-color: #9403fc;">
+        <h1>Welcome to Bro Code</h1>
+        <a href=""> Home</a>> <br>
+        <a href=""> About Us</a>> 
+        <a href=""> Products</a>> 
+        <a href=""> Contact Us</a>
+        <hr><!--hr looks good-->
+    </header>
+
+    <main>
+        <h1>Check out these cool moves</h1>
+        <image src="imagesall/faviconn.png" alt="profile pic"></image><!--ggood to add alt text for screen readers-->
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident quo ullam, quod unde repellat voluptatum 
+            quis doloremque nihil incidunt vitae fugiat nostrum quidem quisquam voluptas. Mollitia architecto assumenda 
+            corrupti expedita?</p>
+
+    </main>
+
+  <!---------------------------------------input by user form-->
+    <form>
+
+           <div>
+        <label for="fname">first name:</label>
+         <input type="text" id="fname" name="fname" placeholder="spongebob">
+           </div>
+
+           <br>
+
+           <div>
+        <label for="lname">last name:</label>
+         <input type="text" id="lname" name="lname" placeholder="squarepants">
+           </div>
+           <br>
+
+           <div>
+            <label for="pass">password:</label>
+            <input type="password" id="pass" name="pass" maxlength="12" required>
+           </div>
+           <br>
+
+           <div>
+            <label for="email">email:</label>
+            <input type="email" id="email" name="email" placeholder="SPants@gmail.com">
+            </div>
+            <br>
+
+            <div>
+             <label for="phone">phone#:</label>   
+             <input type="tel" id="phone" name="phone" placeholder="(+91)01234-56789">
+            </div>
+            <br>
+
+            <div>
+            <label for="bdate">birthdate:</label>
+            <input type="date" id="bdate" name="bdate"><!--has an interactive calender-->
+            </div>
+            <br>
+
+            <div>
+            <label for="quantity">quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="0" max="9999999" value="01"><!--interactive scale-->  
+            </div>
+            <br>
+
+            <!--radiobuttons-->
+            <div>
+                <label for="title">title:</label>
+
+             <label for="chutiya">chutiya</label>
+             <input type="radio" id="chutiya"  name="title" value="chutiya"> <!--since all within 1 title name..now can only 1 be selected...masttt-->
+
+             <label for="chaman-chutiya">chaman-chutiya</label>
+             <input type="radio" id="chaman-chutiya" name="title" value="chaman-chutiya">
+
+             <label for="akhand-chutiya">akhand-chutiya</label>
+             <input type="radio" id="akhand-chutiya" name="title"value="akhand-chutiya">
+
+            </div>
+            <br>
+
+            <!--dropdown menu creating-->
+            <div>
+                <label for="payment"> payment kar saale:</label>
+                <select type="" id="payment" name="payment"><!--creates dropdown menu....WIOW!!!-->
+                    <option value="visa">visa</option>
+                    <option value="mastercard">mastercard</option>
+                    <option value="giftcard">giftcard</option>
+                    </select>
+            </div>
+            <br>
+
+            <!--checkbox-->
+            <div>
+            <label for="subscribe">subscribe:</label>
+            <input type="checkbox" id="subscribe" name="subscribe">
+            </div>
+
+
+
+            <div>
+            <input type="reset" >
+            </div>
+            <br>
+    
+            <div>
+            <input type="submit">
+            </div>
+            <br>
+
+      </form>
+    
+<hr>
+<!--------------------------------------------------button-->
+<!--changes text by calling js function-->
+<button onClick="doSomething()" style="background-color: blanchedalmond; color:#00FF00; border-radius:5px">click me</button>
+<p id="test">hello</p>
+
+<script>
+    function doSomething(){
+        document.getElementById("test").innerHTML ="get lost";
+    }
+</script>
+
+
+<!--button as hyperlink-->
+<a href="https://www.google.com">
+    <button>click me ediot!</button>
+</a>
+
+<!--disabled button-->
+<button diabled>Click & see you piece of shit</button>
+
+
+<!-------------------------------------------------------iframe-->
+<iframe src="https://www.bing.com" width="750" height="200">
+</iframe>
+<!-----------------------------------------advertisement-->
+<iframe style="border:0" src="ad.html" width="750" height="100"></iframe>
+
+
+<!----------------------------------------------span<>- adds markup to text or portion of document-->
+<!----------------------------------------------dev<>- defines a devision of a document-->
+
+
+<!----------------color to webpage by adding style attribute to the tag-->
+
+<!---------------------------------------------------------table-->
+<table bgcolor="black" width="700">
+    <tr bgcolor="grey" align="center">
+        <th width="100">Sunday</th>
+        <th width="100">Monday</th>
+        <th width="100">Tuesday</th>
+        <th width="100">Wednesday</th>
+        <th width="100">Thursday</th>
+        <th width="100">Friday</th>
+        <th width="100">Saturday</th>
+    </tr>
+
+    <tr bgcolor="lightgrey" align="center">
+        <td width="100">closed</td><!--table data-->
+        <td width="100">9-5</td>
+        <td width="100">9-6</td>
+        <td width="100">9-6</td>
+        <td width="100">9-5</td>
+        <td width="100">9-4</td>
+        <td width="100">9-3</td>
+    </tr>
+</table>
+
+    <hr>
+    
+    
+    <br>
+ <!------------------------------------------------------lists-->
+    <!--unordered-->
+    <ul>
+        <li>pizza dough</li>
+        <li>sauce</li>
+        <li>toppings
+        <ul><!--sublist unordered-->
+            <li>peperroni</li>
+        <li>olive</li>
+        <li>tomato</li>
+        </ul>
+        </li>
+    </ul>
+
+    <!--ordered-->
+    <ol type="A">
+        <li>pizza dough</li>
+        <li>sauce</li>
+        <li>toppings
+        <ul><!--sublist unordered-->
+            <li>peperroni</li>
+        <li>olive</li>
+        <li>tomato</li>
+        </ul>
+        </li>
+    </ol>
+
+    <!--description list-->
+
+    <dl>
+        <dt>house</dt>
+        <dd>place where to live</dd>
+        <dt>room</dt>
+        <dd>where to sleep</dd>
+    </dl>
+
+    <br>
+    <hr>
+ <!---------------------------------------------html text formatting tags-->
+       <P>this is the sample text</P>
+      <P>this is the <b>bold</b> text</P>
+      <P><b>this is the <i>italics</i> text</b></P>
+      <P>this is the <small>small</small> text</P>
+      <P>this is the <big>big</big> text</P>
+      <P>this is the <sub>subscript</sub> text</P>
+      <P>this is the <sup>superscript</sup> text</P>
+      <P>this is the <ins>inserted</ins> text</P>
+      <P>this is the <del>deleted</del> text</P>
+      <P>this is the <mark>marked</mark> text</P>
+         
+<br>
+<hr>
+<!---------------------------------------------------------video-->
+    <video controls loop width="300">
+        <source src="big_buck_bunny_720p_1mb.mp4">
+        <source src="big_buck_bunny_720p_1mb.WebM"><!--backup file 1-->
+        This browser does not support HTML5 audio<!--note when no file runs-->
+    </video>
+
+<br>
+<hr>
+ <!-------------------------------------------------------audio-->
+    <audio controls autoplay muted loop>
+    <!--nested sources-->
+     <source src="Putting On The Ritz - Freedom Trail Studio.mp3">
+     <source src="Putting On The Ritz - Freedom Trail Studio.mp3">
+     This browser does't support HTML5 Audio<!--if no sound plays-->
+    </audio>
+<br>
+
+<!----------------------------------------------------image and as hyperlink-->
+    <a href="https://en.wikipedia.org/wiki/Shrek" >
+    <img src="/imagesall/shrek.jpeg" alt="this is shrek" title="shrek is shrexy">
+</a>
+    <br>
+
+ <!-------------------------------------------------------hyperlinks-->
+    <a href="page2.html" target=_self title="this will take you page 2">
+      Go to page 2
+    </a>
+    <br><!--changes line-->
+    <a href="mailto:ananyaagarwal5501@gmail.com" target=_blank title="can mail me here">
+        email me
+    </a>
+
+
+ <!--comment- can be amultiple lined comment-->
+    <h1 id="h11">This is my new website</h1>
+    <hr><!--horizontal line-->
+
+<h1>i like pizza</h1>
+<br>
+<h4>i like pizza</h4>
+<br>
+<h6>i like pizza</h6>
+<br>
+<hr >
+
+<!--div element with a shadow in css will be a box-->
+<div id="box1"></div>
+
+<!--div box elements for the margins understanding-->
+<div class="box" id="box2">Box 2</div>
+<div class="box" id="box3">Box 3</div>
+
+
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae natus, repellendus rem porro quidem, recusandae, neque a voluptatem
+     nisi molestiae harum libero necessitatibus quod commodi. Eaque doloribus architecto deleniti ipsam!</p>
+
+
+<!------------------------------------Float- allows other elements to flow around it-->
+<img src="imagesall/bulbasaur.png" height="150px" id="img2">
+
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam quas error in provident! Voluptates, ab quaerat molestias iure
+    praesentium beatae minus. Quae fugit modi similique rem laborum optio non temporibus.</p>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae natus, repellendus rem porro quidem, recusandae, neque a voluptatem
+    nisi molestiae harum libero necessitatibus quod commodi. Eaque doloribus architecto deleniti ipsam!</p>
+
+<img src="imagesall/pikachu.png" height="150px" id="img3">
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quisquam accusamus minus possimus eos sint quo dolorum officiis
+    assumenda asperiores sed voluptatum placeat, iste omnis magnam accusantium sapiente odio. Nihil!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro alias neque voluptatem et, consequuntur a atque provident nam 
+        fugiat quidem dolore illo aliquid nobis reprehenderit architecto enim dolor facilis! Autem!</p>
+
+<hr>
+
+<!--overflow property in css=> property that sets the desired behaviour when
+                        content does not fit in the content parent bos(overflows)
+                      The 5 states==>                           
+                overflow: visible
+                overflow: hidden
+                overflow: clip
+                overflow: scroll
+                overflow: auto
+    -->
+    <div class="paragraph">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni sequi accusamus, pariatur quasi, adipisci, aperiam 
+            similique dicta odio iusto harum temporibus ea assumenda dolore soluta molestias esse cum cumque sapiente!</p>
+    </div>
+
+
+<!--display property in css=>specifies how/if the elements will be displayed
+                       2types-
+                    block-level=> start on a new line
+                                  takes jup all the width available
+                                (h1, div, p, form, headder, footer)
+                            
+                    inline=> do not start on the new line
+                             width is limited to what is needed
+                            (span, a, img)-->
+<div id="div">div</div>   <!--blocklevel ele-->
+<span id="span">span</span>  <!--inline-->
+<br>
+<br>
+
+<!------------width and height properties in css-->
+<div class="dibba"><!--putting both boxes in a dibba but but cannot see dibba as the boxes takeup its whole space-->
+<div class="boxo">
+    <h2>This is #1</h2>
+</div>
+<div class="boxo">
+    <h2>This is #2</h2>
+    
+</div>
+</div>
+
+<!--------------------position property in css
+                      5 possible values of position=>
+
+                      relative = positioned relative to where it normally
+                      fixed = positioned rel. to the viewport
+                      absolute= _________ the nearest ancestor
+                      sticky = positioned based on scroll position
+                      static = default position for an element
+                    -->
+<div id="box4"></div><!--ex. for relative-->
+
+<!--ex. for fixed-->
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ab voluptates doloribus voluptatibus ipsa a deserunt
+    impedit dolor cupiditate? Assumenda magni eligendi tenetur esse vel amet eos nemo, eum culpa!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ab voluptates doloribus voluptatibus ipsa a deserunt
+    impedit dolor cupiditate? Assumenda magni eligendi tenetur esse vel amet eos nemo, eum culpa!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ab voluptates doloribus voluptatibus ipsa a deserunt
+    impedit dolor cupiditate? Assumenda magni eligendi tenetur esse vel amet eos nemo, eum culpa!</p>
+ <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ab voluptates doloribus voluptatibus ipsa a deserunt
+    impedit dolor cupiditate? Assumenda magni eligendi tenetur esse vel amet eos nemo, eum culpa!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ab voluptates doloribus voluptatibus ipsa a deserunt
+    impedit dolor cupiditate? Assumenda magni eligendi tenetur esse vel amet eos nemo, eum culpa!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ab voluptates doloribus voluptatibus ipsa a deserunt
+   impedit dolor cupiditate? Assumenda magni eligendi tenetur esse vel amet eos nemo, eum culpa!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ab voluptates doloribus voluptatibus ipsa a deserunt
+    impedit dolor cupiditate? Assumenda magni eligendi tenetur esse vel amet eos nemo, eum culpa!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ab voluptates doloribus voluptatibus ipsa a deserunt
+    impedit dolor cupiditate? Assumenda magni eligendi tenetur esse vel amet eos nemo, eum culpa!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ab voluptates doloribus voluptatibus ipsa a deserunt
+    impedit dolor cupiditate? Assumenda magni eligendi tenetur esse vel amet eos nemo, eum culpa!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ab voluptates doloribus voluptatibus ipsa a deserunt
+    impedit dolor cupiditate? Assumenda magni eligendi tenetur esse vel amet eos nemo, eum culpa!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ab voluptates doloribus voluptatibus ipsa a deserunt
+    impedit dolor cupiditate? Assumenda magni eligendi tenetur esse vel amet eos nemo, eum culpa!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ab voluptates doloribus voluptatibus ipsa a deserunt
+    impedit dolor cupiditate? Assumenda magni eligendi tenetur esse vel amet eos nemo, eum culpa!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ab voluptates doloribus voluptatibus ipsa a deserunt
+    impedit dolor cupiditate? Assumenda magni eligendi tenetur esse vel amet eos nemo, eum culpa!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ab voluptates doloribus voluptatibus ipsa a deserunt
+   impedit dolor cupiditate? Assumenda magni eligendi tenetur esse vel amet eos nemo, eum culpa!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ab voluptates doloribus voluptatibus ipsa a deserunt
+    impedit dolor cupiditate? Assumenda magni eligendi tenetur esse vel amet eos nemo, eum culpa!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ab voluptates doloribus voluptatibus ipsa a deserunt
+    impedit dolor cupiditate? Assumenda magni eligendi tenetur esse vel amet eos nemo, eum culpa!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ab voluptates doloribus voluptatibus ipsa a deserunt
+    impedit dolor cupiditate? Assumenda magni eligendi tenetur esse vel amet eos nemo, eum culpa!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ab voluptates doloribus voluptatibus ipsa a deserunt
+    impedit dolor cupiditate? Assumenda magni eligendi tenetur esse vel amet eos nemo, eum culpa!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ab voluptates doloribus voluptatibus ipsa a deserunt
+    impedit dolor cupiditate? Assumenda magni eligendi tenetur esse vel amet eos nemo, eum culpa!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ab voluptates doloribus voluptatibus ipsa a deserunt
+    impedit dolor cupiditate? Assumenda magni eligendi tenetur esse vel amet eos nemo, eum culpa!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ab voluptates doloribus voluptatibus ipsa a deserunt
+    impedit dolor cupiditate? Assumenda magni eligendi tenetur esse vel amet eos nemo, eum culpa!</p>
+
+
+
+
+
+<!--paragraph-->
+<!--changing both backgrpund and font color-->
+<!--spanning-->
+<p id="p1" class="odd"><span style="color: blue;">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta placeat cumque laudantium doloremque dolore fuga neque laborum 
+    reiciendis</span> quas sint dolorum explicabo culpa deserunt corrupti velit nostrum, sit ratione quod!</p>
+
+
+<p id="p2" class="even">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque debitis neque reiciendis accusamus exercitationem saepe aliquid
+     assumenda alias! Eveniet similique minus, a consectetur et quae recusandae provident mollitia placeat quaerat!</p>
+
+<p id="p3" class="odd">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, atque iste natus eos facilis facere ipsa tempora,
+    deserunt nihil distinctio quis alias assumenda maxime! Ad, id totam. Recusandae, porro minima!</p>
+
+<p id="p4" class="even">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa expedita veritatis, ma xime ea blanditiis
+     odio unde quidem, minus repudiandae, dolores provident porro dolorum doloribus earum exercitationem 
+     tempore laudantium deserunt voluptatem!</p>
+
+
+<!--divving-> the dackground color csn be chnged as above also, bt by div the background of many texts can change alltogether-->
+<div style="background-color: #222222;">
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo illum ex, quaerat illo iure eos sed, consequuntur inventore, 
+        aliquam rem omnis ipsam a adipisci eveniet totam. Nam autem tenetur exercitationem.
+    </p>
+
+    <P>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita praesentium doloribus quia? Fugit placeat corporis doloremque
+         quam exercitationem temporibus, suscipit sapiente, aspernatur quos culpa perspiciatis deleniti, laboriosam atque fugiat veniam.
+    </P>
+</div>
+
+<!---------------------------------------------------footer-->
+<footer style="background-color: #9403fc;">
+    <hr>
+    author: Bro Code<br>
+    &copy; copyright reserved<!--copyright--><br>
+    <small><a href="mailto:ananyaagarwal5501@gmail.com">ananyaagarwal5501@gmail.com</a><!--email to reach--></small>
+</footer>
+
+</body>
+</html>
